@@ -1,7 +1,7 @@
-﻿SELECT *
+SELECT *
 FROM order_details
 WHERE order_id IN (
-    SELECT order_id
+    SELECT id
     FROM orders
     WHERE shipper_id = 3
 );
